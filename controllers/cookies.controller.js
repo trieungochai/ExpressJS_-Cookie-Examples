@@ -1,5 +1,6 @@
 const getCookies = async (req, res) => {
-  return res.send("getCookies");
+  const cookies = req.headers.cookie;
+  return res.send(cookies);
 };
 
 const setCookies = async (req, res) => {
