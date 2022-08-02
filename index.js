@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
+const cookieParser = require("cookie-parser");
 const cookiesRouter = require("./routes/cookies.router");
 
 // middleware
 app.use(express.json());
+app.use(cookieParser());
 
 // routes
 app.get("/", (req, res) => {
