@@ -11,6 +11,7 @@ const setCookies = async (req, res) => {
 };
 
 const deleteCookies = async (req, res) => {
+  res.clearCookie("username");
   return res.send("deleteCookies");
 };
 
