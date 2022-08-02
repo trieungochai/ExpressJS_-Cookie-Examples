@@ -3,6 +3,7 @@ const getCookies = async (req, res) => {
 };
 
 const setCookies = async (req, res) => {
+  res.setHeader("set-cookie", "username=kimchicucai");
   return res.send("setCookies");
 };
 
